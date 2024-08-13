@@ -1,0 +1,77 @@
+/* Landing.css */
+
+/* Set the background color of the landing page */
+.landing-container{
+    /* background-color: #D0B8A8; */
+    /* background: linear-gradient(267deg,#E3A5C7 0.26%,#694F8E 87.07%); */
+    padding: 20px;
+    min-height : 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-body{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(./back-image.png); */
+    /* background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden; */
+}
+
+.typography-header{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#E3A5C7 0.26%,#694F8E 87.07%);
+    color: white;
+    margin-bottom: 24px;
+    text-align: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textField{
+  width: 100%;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+
+.button{
+    background-color: #3f515b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.button:hover {
+    background-color: #303f9f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.button:disabled{
+    background-color: #b0bec5; /* Disabled state color */
+}
+
+.circularProgress{
+    color: #3f51b5; /* Color matches the button */
+}
+
+.createdimg{
+    max-width: 100%;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
