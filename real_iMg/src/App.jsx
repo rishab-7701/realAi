@@ -4,12 +4,11 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import { Landing } from "./Landing";
 
-
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero/>
+      <Hero />
       {/* <Body/> */}
       {/* <Landing /> */}
     </div>
