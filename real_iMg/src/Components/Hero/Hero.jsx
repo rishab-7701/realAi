@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import logo from "../../assets/real_Ai logo.svg";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const Hero = () => {
   return (
     <div className="hero">
@@ -15,8 +16,8 @@ const Hero = () => {
         user input.
       </p>
       <div className="hero-action">
-        <div className="hero-input_Prompt">Enter Prompt</div>
-        <div className="hero-generate_img">Generate Image</div>
+        {/* <div className="hero-input_Prompt">Enter Prompt</div> */}
+        <div className="hero-generate_img">Generate Image &nbsp; <ArrowForwardIosIcon className="forward-icon"/></div>
       </div>
     </div>
   );
