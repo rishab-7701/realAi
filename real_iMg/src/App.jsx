@@ -9,8 +9,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      {/* <Body/> */}
       {/* <Landing /> */}
+      {/* <Body/> */}
     </div>
   );
 }
