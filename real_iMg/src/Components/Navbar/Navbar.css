@@ -11,35 +11,35 @@
 } */
 
 .main-head {
-  padding: 10px 30px;
-  border-radius: 50px;
-  /* background: linear-gradient(267deg,#DA7C25 0.36%,#907597 102.06%); */
-  font-size: 32px;
+  padding: 5px 15px; /* Reduce padding */
+  border-radius: 25px; /* Slightly smaller border radius */
+  font-size: 24px; /* Reduce font size */
   margin-top: 5px;
   cursor: pointer;
   transition: 0.5s;
-  letter-spacing: 15px;
+  letter-spacing: 10px; /* Reduce letter spacing */
   text-transform: uppercase;
   font-weight: 400;
-  border: 4px solid #b455ff;
-  width: 15%;
+  border: 3px solid #b455ff; /* Thinner border */
+  width: auto; /* Adjust width to fit content */
 }
 
 .main-head:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 50px 0 #b455ff inset, 0 5px 25px #201826,
-    0 5px 50px 0 #b455ff inset, 0 5px 25px #201826;
-}
-
-img:hover {
-  transform: scale(1.09);
+  transform: scale(1.15);
+  box-shadow: 0 5px 25px 0 #b455ff inset, 0 5px 25px #201826,
+    0 5px 25px 0 #b455ff inset, 0 5px 25px #201826;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 120px;
+  margin: 10px 60px; /* Reduce margin for compactness */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #161513 ;
+  padding: 10px 0;
 }
 
 .nav-menu {
@@ -47,96 +47,52 @@ img:hover {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  gap: 60px;
-  font-size: 20px;
+  gap: 40px; /* Reduce gap between menu items */
+  font-size: 18px; /* Slightly smaller font size */
 }
 
 .nav-connect {
-  padding: 10px 25px;
-  border-radius: 40px;
+  padding: 5px 20px; /* Reduce padding */
+  border-radius: 30px; /* Smaller border radius */
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
-  /* background: linear-gradient(267deg,#F9DBBA 0.26%,#5B99C2 87.06%); */
-  font-size: 22px;
+  font-size: 18px; /* Smaller font size */
   cursor: pointer;
   transition: 0.5s;
 }
 
 .nav-connect:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
-.list-1 {
-  padding: 15px 30px;
-  border-radius: 35px;
-  /* background: linear-gradient(267deg,#F9DBBA 0.26%,#5B99C2 87.06%); */
-  /* background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%); */
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.list-1:hover {
-  transform: scale(1.05);
-}
-
-.list-2 {
-  padding: 15px 30px;
-  border-radius: 35px;
-  /* background: linear-gradient(267deg,#F9DBBA 0.26%,#5B99C2 87.06%); */
-  /* background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%); */
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.list-2:hover {
-  transform: scale(1.05);
-}
-
+.list-1,
+.list-2,
 .list-new{
-  padding: 15px 30px;
-  border-radius: 35px;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
+  padding: 10px 20px; /* Reduce padding */
+  border-radius: 25px; /* Smaller border radius */
+  font-size: 18px; /* Smaller font size */
   cursor: pointer;
   transition: 0.3s;
 }
 
-.list-new:hover {
+.list-1:hover,
+.list-2:hover,
+.list-new:hover{
   transform: scale(1.05);
 }
 
 .list-upcoming{
-  padding: 15px 30px;
-  border-radius: 35px;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
+  padding: 10px 20px; /* Reduce padding */
+  border-radius: 25px; /* Smaller border radius */
+  font-size: 18px; /* Smaller font size */
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition:  transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .list-upcoming:hover {
-  animation: bounceRotate 0.7s;
+  animation: bounceRotate 0.7s; /* Slightly faster animation */
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   transform: scale(1.05);
 }
-/* @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-} */
 
 @keyframes bounceRotate {
   0% {
@@ -159,42 +115,42 @@ img:hover {
   }
 }
 
-/* Media Queries */
 
-/* For tablets */
+
 @media (max-width: 768px) {
   .main-head {
-    font-size: 24px;
-    padding: 15px 30px;
-    letter-spacing: 10px;
+    font-size: 22px;
+    padding: 10px 20px;
+    letter-spacing: 8px;
   }
 
   .navbar {
-    margin: 10px 60px;
+    margin: 10px 40px;
   }
 
   .nav-menu {
-    gap: 40px;
-    font-size: 18px;
+    gap: 30px;
+    font-size: 16px;
   }
 
   .nav-connect {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
   }
 
   .list-1,
-  .list-2 {
-    padding: 10px 20px;
-    font-size: 20px;
+  .list-2,
+  .list-new,
+  .list-upcoming {
+    padding: 8px 16px;
+    font-size: 16px;
   }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
   .main-head {
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 5px 10px;
     letter-spacing: 5px;
   }
 
@@ -205,21 +161,23 @@ img:hover {
 
   .nav-menu {
     flex-direction: column;
-    gap: 20px;
-    font-size: 16px;
+    gap: 15px;
+    font-size: 14px;
   }
 
   .nav-connect {
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 5px 15px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
   }
 
   .list-1,
-  .list-2 {
-    padding: 8px 16px;
-    font-size: 18px;
+  .list-2,
+  .list-new,
+  .list-upcoming {
+    padding: 5px 10px;
+    font-size: 14px;
     width: 100%;
     text-align: center;
   }
